@@ -1,7 +1,7 @@
 import { NavLink } from "react-router";
 export function Header() {
   return (
-    <header className="mt-5">
+    <header className="py-5">
       <nav>
         <ul className="flex gap-5 items-center">
           <NavLink

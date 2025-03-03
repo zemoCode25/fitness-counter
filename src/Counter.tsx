@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { Modal } from "./Modal";
 
 export function Counter() {
   const [count, setCount] = useState(0);
+  const [isModalOpen, setModalOpen] = useState(false);
 
   return (
     <div>
@@ -31,7 +33,10 @@ export function Counter() {
           >
             Reset
           </button>
-          <button className="cursor-pointer rounded-md bg-gray-200 px-4 py-1 text-black w-full font-semibold">
+          <button
+            onClick={() => setModalOpen((prevModal) => !prevModal)}
+            className="cursor-pointer rounded-md bg-gray-200 px-4 py-1 text-black w-full font-semibold"
+          >
             Settings
           </button>
         </div>
@@ -39,6 +44,7 @@ export function Counter() {
           Save
         </button>
       </div>
+      {isModalOpen && <Modal />}
     </div>
   );
 }
