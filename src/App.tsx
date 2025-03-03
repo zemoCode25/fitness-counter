@@ -1,12 +1,15 @@
+import { Routes, Route } from "react-router";
+import { MainLayout } from "./MainLayout";
 import { Counter } from "./Counter";
 
 function App() {
   return (
-    <div>
-      <main className="w-dvw h-dvh flex justify-center items-center">
-        <Counter />
-      </main>
-    </div>
+    <Routes>
+      <Route path="/" element={<MainLayout />}>
+        <Route index element={<Counter />}></Route>
+        <Route path="/records"></Route>
+      </Route>
+    </Routes>
   );
 }
 
