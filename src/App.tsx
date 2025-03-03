@@ -1,8 +1,10 @@
+import { Counter } from "./Counter";
+
 function App() {
   return (
     <div>
-      <main className="w-dvw">
-        <h1 className="font-semibold">TANGINA MO</h1>
+      <main className="w-dvw h-dvh flex justify-center items-center">
+        <Counter />
       </main>
     </div>
   );
