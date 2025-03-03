@@ -8,7 +8,7 @@ export function Counter() {
   return (
     <div>
       <div className="flex flex-col justify-center items-center">
-        <h1 className="font-bold text-3xl">Count Fitness</h1>
+        <h1 className="font-bold text-3xl">Fitness Counter</h1>
         <p className="text-sm text-gray-500">Tally your steps to fitness</p>
         <h2 className="mt-3 text-xl font-semibold">Steps:</h2>
         <h3 className="my-3 text-7xl font-semibold">{count}</h3>
