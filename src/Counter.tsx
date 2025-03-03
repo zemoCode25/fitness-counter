@@ -24,11 +24,14 @@ export function Counter() {
             +1
           </button>
         </div>
-        <div className="flex my-2 w-full gap-2">
-          <button className="cursor-pointer rounded-md bg-gray-300 px-4 py-1 text-black w-full font-semibold">
+        <div className="flex mt-5 mb-2 w-full gap-2">
+          <button
+            onClick={() => setCount(0)}
+            className="cursor-pointer rounded-md bg-gray-200 px-4 py-1 text-black w-full font-semibold"
+          >
             Reset
           </button>
-          <button className="cursor-pointer rounded-md bg-gray-300 px-4 py-1 text-black w-full font-semibold">
+          <button className="cursor-pointer rounded-md bg-gray-200 px-4 py-1 text-black w-full font-semibold">
             Settings
           </button>
         </div>
